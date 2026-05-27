@@ -23,6 +23,8 @@ const navigationData = [
     { title: "Contact", href: "#" },
 ];
 
+console.log('releases: ', releases);
+
 const menudata = [
     {
         id: 1,
