@@ -1,7 +1,7 @@
 import Header from "./components/shadcn-studio/blocks/hero-section-01/header";
 import HeroSection from "./components/shadcn-studio/blocks/hero-section-01/hero-section-01";
 import HeroSection41 from "./components/shadcn-studio/blocks/hero-section-41/hero-section-41";
-
+import ProductScreen from "./views/product";
 import Footer from "./components/shadcn-studio/blocks/footer-component-01/footer-component-01";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./components/shadcn-studio/blocks/login-page-01/login-page-01";
@@ -18,7 +18,7 @@ const releases = [
 const navigationData = [
     { title: "Home", href: "/" },
     { title: "Change logs", href: "/changelog" },
-    { title: "Pricing", href: "#" },
+    { title: "Menu", href: "/product" },
     { title: "About", href: "#" },
     { title: "Contact", href: "#" },
 ];
@@ -76,6 +76,7 @@ function App() {
                         element={<ChangelogContent releases={releases} />}
                     />
                     <Route path="/login" element={<LoginPage />} />
+                    <Route path="/product" element={<ProductScreen />} />
                 </Routes>
                 <Footer />
             </BrowserRouter>
